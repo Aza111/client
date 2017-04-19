@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Информация о клиенте</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    </head>
+    <body>
+    <div class="header">
+    <nav>
+        <ul>
+            <a href="https://aza111.github.io/hotel/"><li>Главная</li></a>
+            <a href="#"><li>О горе Эльбрус</li></a>
+            <a href="#"><li>Партнеры</li></a>
+            <a href="#"><li>Контакты</li></a>
+        </ul>
+    </nav>    
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="main">
+        <span onclick = "openFile()" id="read">Выбрать</span>
+        <div id = "text"></div>
+    </div>      
+        
+        
+    <script>
+	function openFile()
+{
+var input = document.createElement('input');
+input.type= 'file';
+input.onchange = function()
+{
+var fr = new FileReader();
+fr.onload = function (info){
+text.innerHTML = info.target.result.toString().replace(/\n/g, '<br>').replace(/ /g, '&nbsp; ');
+};
+fr.readAsText(this.files[0]);
+};
+input.click();
+};
+	</script> 
+        
+        
+        
+    </body>
+</html>
