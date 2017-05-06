@@ -1,4 +1,4 @@
-﻿a
+a
 {text-decoration: none}
 body
 {
@@ -17,7 +17,7 @@ nav
     background: #DC143C;
     width: 1200px;
     z-index: 1;
-     box-shadow: #000 2px 2px 20px 1px;
+    box-shadow: #000 2px 2px 20px 1px;
 }
 
 
@@ -37,6 +37,7 @@ nav li:hover
 
 div.main
 {
+    margin-top: -5px;
     background: #fff;
     height: auto;
     box-shadow: #000 2px 2px 20px 1px;
@@ -55,5 +56,9 @@ div.main
 	margin-top: 50px;
 	border: solid #DC143C 3px;
 	border-radius: 10px;
-	background: gray;
+	background: rgb(249, 241, 252);
+}
+.main1
+{
+    margin-left: 20px;
 }
