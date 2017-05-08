@@ -45,15 +45,17 @@ div.main
 
 #read
 {
-	color: red;
+	color: #40E0D0;
 	font-size: 40px;
-	border: solid #DC143C 2px;
+	border: solid #40E0D0 2px;
 	border-radius: 5px;
 }
 #text
 {
-	width: 1200px;
+	width: 1154px;
 	margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 	border: solid #DC143C 3px;
 	border-radius: 10px;
 	background: rgb(249, 241, 252);
